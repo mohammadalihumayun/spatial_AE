@@ -1,3 +1,16 @@
+import scipy.io.wavfile
+import os
+import numpy as np
+import librosa
+from scipy.spatial.distance import cdist
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from sklearn.decomposition import PCA as skPCA
+from sklearn.metrics import confusion_matrix as cm
+from sklearn.metrics import precision_recall_fscore_support as prf
+import csv
+
 ## pca plots for visualization
 
 
