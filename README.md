@@ -1,34 +1,37 @@
 # Spatial_AE
 
-The repository contains python implementation for an unsupervised speech representation learning model evaluated over automatic keyword spotting.
+This repository contains python implementation for an unsupervised speech representation learning, AutoEncoder AE model evaluated over automatic keyword spotting.
 The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
-The repository contains the following three code files for the implementation and evaluation of the model.
+The implementaion has following three code files, for the simulations and evaluation of the autoencoder model.
 
-`dlmodels.py` library that contains the modeules for tensorflow.keras implementation of the proposed and benchmark models  
+`dlmodels.py` library that contains the modeules that implement the proposed and benchmark deep learning models in tensorflow.keras   
 `simulations.py` file to run the experiments  
 `display_results.py` file to plot the results graphically  
 
 For any queries, please contact:  
 mohammadalihumayun@gmail.com
 
-## Input and output data directories
-First of all the directory to save the results and the directory to load the input speech dataset are selected  
-Speech_commands, i.e. Google Dataset. has been used for out experiments which can be downloaded from the following URL  
-https://www.tensorflow.org/datasets/catalog/speech_commands
+# Running the simulations
 
-import the modules for the proposed and the benchmark models
+You need to run `simulations.py` file to run the experiments and save their results.
+The  `simulations.py` uses the modules for deeplearning models from `dlmodels.py` file
 ```
 from dlmodels import bmcnn, discrim,ae_pos_abx
 ```
-Select the input and output folders.
+
+
+
+## Select input and output data directories
+Before running the `simulations.py` file, select the input output data directories and the number of samples to use from dataset.    
+Set following variables to select the directory to load input speech dataset and the directory, to save the results:
 ```
 resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 ```
 
-## Data preperation
-Select the number of samples for unsupervised autoencoder training, and size of training and test sets for supervised KWS evaluation .
+
+Set following variables to select the number of samples for unsupervised autoencoder training, and size of training/test sets for supervised KWS evaluation.
 
 ```
 unlabeled_set_size=12000 # number of samples for autoencoder training
@@ -36,11 +39,15 @@ lbl_trai_size=3000 # size of training set for supervised KWS evaluation
 lbl_test_size=6000 # size of test set for supervised KWS evaluation
 ```
 
-Audio files are loaded with corresponding filenames and sample rates using scipy  
-Spectral features are extracted from loaded audio files using librosa  
-Unlabaled set for unsupervised AE training and labeled set for   supervised KWS evaluation are segregated  
+
+**_Note:**_ Our experiments have used Speech_commands, i.e. crowdsourced keywords dataset by google. The dataset can be downloaded from the following URL  
+https://www.tensorflow.org/datasets/catalog/speech_commands
+
 
 ## Experiments for evaluation
+
+The code loads audio files with corresponding filenames and sample rates using scipy. It extracts the spectral features from loaded audio files using librosa and  segregates the unlabaled set for unsupervised AE training and labeled set for  supervised KWS evaluation. 
+
 Mean anchor vector and postion scalars are computed using cosine distances in features space using scipy  
 The proposed and the benchmark models based on tf.keras are imported from the module dlmodels 
 
