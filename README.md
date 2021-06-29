@@ -4,7 +4,7 @@ This repository contains python implementation for an unsupervised, speech repre
 
 The implementaion has following three code files, for the simulations and evaluation of the AE model.
 
-`dlmodels.py` library that contains the modeules that implement the proposed and benchmark deep learning models in tensorflow.keras   
+`dlmodels.py` containing modules for implementation of the proposed and benchmark deep learning models   
 `simulations.py` file to run the experiments  
 `display_results.py` file to plot the results graphically  
 
