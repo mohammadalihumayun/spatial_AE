@@ -61,7 +61,13 @@ You need to run `display_results.py` file to load the saved results and display 
 The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
 Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
 
-graph names with descriptions and axes info
+* Precision for keywords
+* Recall for keywords
+* Precision difference between the proposed AE representation and MFCC
+* Recall difference between the proposed AE representation and MFCC
+* 2D PCA projections for the proposed AE representation
+* 2D PCA projections for MFCC
+* Computational complexities for complete distance matrix and the proposed position estimate
 
 # Contact information
 
