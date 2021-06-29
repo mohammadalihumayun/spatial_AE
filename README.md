@@ -9,8 +9,6 @@ The implementaion has following three code files, for the simulations and evalua
 `simulations.py` file to run the experiments  
 `display_results.py` file to plot the results graphically  
 
-For any queries, please contact:  
-mohammadalihumayun@gmail.com
 
 # Running the simulations
 
@@ -55,3 +53,12 @@ The spectral feature space and the features extracted by the proposed model are 
 Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
 
 graph names with descriptions and axes info
+
+# Contact information
+
+For any queries, please contact:
+
+Pg Emeroylariffion Abas
+emeroylariffion.abas@ubd.edu.bn  
+Mohammad Ali Humayun
+mohammadalihumayun@gmail.com
