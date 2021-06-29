@@ -22,7 +22,7 @@ resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 ```
 
-*Set following variables to select the number of samples for unsupervised autoencoder training, the size of training/test sets for supervised KWS evaluation, and the number of repeatations of train/test cycles for the models:
+Markup: *Set following variables to select the number of samples for unsupervised autoencoder training, the size of training/test sets for supervised KWS evaluation, and the number of repeatations of train/test cycles for the models:
 
 ```
 unlabeled_set_size=12000 # number of samples for autoencoder training
