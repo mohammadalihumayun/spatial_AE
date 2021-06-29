@@ -1,6 +1,6 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. The proposed AE is constrained with spatial position of datapoints within the dataset. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. The proposed AE is constrained with spatial position of datapoints. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
 The implementaion has following three code files, for the simulations and evaluation of the AE model.
 
@@ -14,7 +14,7 @@ The implementaion has following three code files, for the simulations and evalua
 You need to run `simulations.py` file to run the experiments and to save their results.
 
 ## Select input and output data directories
-Before running the `simulations.py` file, select the input output data directories, the number of samples to use from dataset, and the number of iterations to test the model.
+Before running the `simulations.py` file, select the input/output data directories, the number of samples to use from dataset, and the number of iterations to test the model.
 
 * Set following variables to select the directory to load input speech dataset and the directory, to save the results:
 ```
@@ -38,12 +38,12 @@ https://www.tensorflow.org/datasets/catalog/speech_commands
 
 ## Experiments for evaluation
 
-The code loads audio files with corresponding filenames and sample rates using scipy and extracts their spectral features using librosa.
-The dataset is then segregated into unlabaled set for unsupervised AE training and the labeled set for  supervised KWS evaluation.
-The mean anchor vector and corresponding postion scalars are computed using cosine distances in features space using scipy.
-The deeplearning models are implemented in tensorflow.kers and are imported as modules from `dlmodels.py` file. 
-Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations over randomly sampled different training and test sets. 
-The simulations results are saved as follows in the results directory:  
+The code loads audio files with corresponding filenames and sample rates, and extracts their spectral features.
+The features are then segregated into unlabaled set for unsupervised AE training and the labeled set for  supervised KWS evaluation.
+The mean anchor vector and corresponding postion scalars are computed using cosine distances in the features space.
+The deeplearning models are imported as modules from `dlmodels.py` file. 
+Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations over randomly sampled, different training and test sets. 
+The simulation results are saved as follows, in the results directory:  
 * AE representation for KWS train/test sets as `ae_representation.npy`    
 * MFCC features for KWS train/test sets as `MFCC_features.npy`  
 * Classification scores as csv file named `results.csv`   
