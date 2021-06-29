@@ -26,7 +26,10 @@ Unlabaled set for unsupervised AE training and labeled set for   supervised KWS 
 
 ## Experiments for evaluation
 Mean anchor vector and postion scalars are computed using cosine distances in features space using scipy  
-The proposed and the benchmark models based on tf.keras are imported from the module dlmodels  
+The proposed and the benchmark models based on tf.keras are imported from the module dlmodels 
+```
+from dlmodels import bmcnn, discrim,ae_pos_abx
+```
 Training and evaluation for proposed as well as benchmark model are performed for multiple iterations using the loaded models  
 The results are saved as csv file named results.csv in the earlier selected results directory  
 
