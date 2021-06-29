@@ -6,7 +6,11 @@ The relevant paper for the proposed model is currently under review, and we will
 For any queries, please contact:
 mohammadalihumayun@gmail.com
 
-TFollowing steps represent the flow of experiments in terms of the code in main.py file
+The repository contains the following three code files for the implementation and evaluation of the model.
+
+dlmodels.py library that contains the modeules for tensorflow.keras implementation of the proposed and benchmark models
+simulations.py file to run the experiments
+display_results.py file to plot the results graphically
 
 ## Input and output data directories
 First of all the directory to save the results and the directory to load the input speech dataset are selected  
