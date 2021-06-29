@@ -1,5 +1,12 @@
 # Spatial_AE
-Following steps represent the flow of experiments in terms of the code in main.py file
+
+The repository contains python implementation for an unsupervised speech representation learning model evaluated over automatic keyword spotting. 
+The relevant paper for the proposed model is currently under review, and we will update its information if accepted.
+
+For any queries, please contact:
+mohammadalihumayun@gmail.com
+
+TFollowing steps represent the flow of experiments in terms of the code in main.py file
 
 ## Input and output data directories
 First of all the directory to save the results and the directory to load the input speech dataset are selected  
