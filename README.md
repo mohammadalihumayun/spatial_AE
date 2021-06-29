@@ -48,7 +48,7 @@ The simulations results are saved as follows in the results directory:
 * MFCC features for KWS train/test sets as `MFCC_features.npy`  
 * Classification scores as csv file named `results.csv`   
 
-The 'results.csv' stores the results in following format:  
+`results.csv` stores the results in following format:  
 
 
 |MFCC WER|MFCC precision|MFCC recall|MFCC avg precision|MFCC avg recall|AE WER|AE precision|AE recall|AE avg precision|AE avg recall|
