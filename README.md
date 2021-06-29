@@ -7,7 +7,16 @@ Speech_commands, i.e. Google Dataset. has been used for out experiments which ca
 https://www.tensorflow.org/datasets/catalog/speech_commands
 
 ## Data preperation
-The number of samples for unsupervised autoencoder training, and size of training and test sets for supervised KWS evaluation are selected  
+Select the number of samples for unsupervised autoencoder training, and size of training and test sets for supervised KWS evaluation .
+
+'''
+resultspath='x:/results_directory' # folder to save the results as csv and plots
+corpuspath='x:/googlecorpus_directory' # folder for speech dataset
+unlabeled_set_size=12000 # number of samples for autoencoder training
+lbl_trai_size=3000 # size of training set for supervised KWS evaluation
+lbl_test_size=6000 # size of test set for supervised KWS evaluation
+'''
+
 Audio files are loaded with corresponding filenames and sample rates using scipy  
 Spectral features are extracted from loaded audio files using librosa  
 Unlabaled set for unsupervised AE training and labeled set for   supervised KWS evaluation are segregated  
