@@ -27,6 +27,9 @@ The proposed and the benchmark models based on tf.keras are imported from the mo
 Training and evaluation for proposed as well as benchmark model are performed for multiple iterations using the loaded models  
 The results are saved as csv file named results.csv in the earlier selected results directory  
 
+
+|wercm|cmpresi|cmrecal|cmavpresi|cmavrecal|wer_v_p|appresi|aprecal|apavpresi|apavrecal|
+
 ## Visualization of results
 The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
 Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
