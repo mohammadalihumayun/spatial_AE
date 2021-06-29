@@ -47,6 +47,7 @@ The simulations results are saved as follows in the results directory:
 * AE representation for KWS train/test sets as `ae_representation.npy`    
 * MFCC features for KWS train/test sets as `MFCC_features.npy`  
 * Classification scores as csv file named `results.csv`   
+
 The 'results.csv' stores the results in following format:  
 
 
