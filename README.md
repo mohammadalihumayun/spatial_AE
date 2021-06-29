@@ -16,11 +16,6 @@ mohammadalihumayun@gmail.com
 
 You need to run `simulations.py` file to run the experiments and save their results.
 The  `simulations.py` uses the modules for deeplearning models from `dlmodels.py` file
-```
-from dlmodels import bmcnn, discrim,ae_pos_abx
-```
-
-
 
 ## Select input and output data directories
 Before running the `simulations.py` file, select the input output data directories and the number of samples to use from dataset.    
@@ -29,7 +24,6 @@ Set following variables to select the directory to load input speech dataset and
 resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 ```
-
 
 Set following variables to select the number of samples for unsupervised autoencoder training, and size of training/test sets for supervised KWS evaluation.
 
@@ -40,7 +34,7 @@ lbl_test_size=6000 # size of test set for supervised KWS evaluation
 ```
 
 
-**_Note:**_ Our experiments have used Speech_commands, i.e. crowdsourced keywords dataset by google. The dataset can be downloaded from the following URL  
+**Note:** Our experiments have used Speech_commands, i.e. crowdsourced keywords dataset by google. The dataset can be downloaded from the following URL  
 https://www.tensorflow.org/datasets/catalog/speech_commands
 
 
