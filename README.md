@@ -44,9 +44,9 @@ The mean anchor vector and corresponding postion scalars are computed using cosi
 The deeplearning models are implemented in tensorflow.kers and are imported as modules from `dlmodels.py` file. 
 Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations over randomly sampled different training and test sets. 
 The simulations results are saved as follows in the results directory:  
-Transformed AE representation for KWS train/test sets as `ae_representation.npy`    
-MFCC features for KWS train/test sets as `MFCC_features.npy`  
-Classification scores as csv file named `results.csv`   
+* AE representation for KWS train/test sets as `ae_representation.npy`    
+* MFCC features for KWS train/test sets as `MFCC_features.npy`  
+* Classification scores as csv file named `results.csv`   
 The 'results.csv' stores the results in following format:  
 
 
