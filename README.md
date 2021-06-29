@@ -24,12 +24,13 @@ resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 ```
 
-Set following variables to select the number of samples for unsupervised autoencoder training, and size of training/test sets for supervised KWS evaluation.
+Set following variables to select the number of samples for unsupervised autoencoder training, the size of training/test sets for supervised KWS evaluation, and the number of repeatations of train/test cycles for the models
 
 ```
 unlabeled_set_size=12000 # number of samples for autoencoder training
 lbl_trai_size=3000 # size of training set for supervised KWS evaluation
 lbl_test_size=6000 # size of test set for supervised KWS evaluation
+num_simulations=10 # iterations for training and testing runs of the models
 ```
 
 
@@ -43,7 +44,7 @@ The code loads audio files with corresponding filenames and sample rates using s
 The dataset is then segregated into unlabaled set for unsupervised AE training and the labeled set for  supervised KWS evaluation.
 The mean anchor vector and corresponding postion scalars are computed using cosine distances in features space using scipy.
 The deeplearning models are implemented in tensorflow.kers and are imported as modules from `dlmodels.py` file. 
-multiple iterations are run for training and evaluation of the proposed as well as benchmark model and the results are saved as csv file named 'results.csv' in the earlier selected results directory. The 'results.csv' stores the results in following format
+Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations and the results are saved as csv file named 'results.csv' in the earlier selected results directory. The 'results.csv' stores the results in following format
 
 
 |wercm|cmpresi|cmrecal|cmavpresi|cmavrecal|wer_v_p|appresi|aprecal|apavpresi|apavrecal|
