@@ -1,9 +1,9 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised speech representation learning, AutoEncoder AE model evaluated over automatic keyword spotting.
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, model evaluated over automatic keyword spotting.
 The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
-The implementaion has following three code files, for the simulations and evaluation of the autoencoder model.
+The implementaion has following three code files, for the simulations and evaluation of the AE model.
 
 `dlmodels.py` library that contains the modeules that implement the proposed and benchmark deep learning models in tensorflow.keras   
 `simulations.py` file to run the experiments  
