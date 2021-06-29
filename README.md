@@ -53,3 +53,5 @@ Training and evaluation of the proposed as well as benchmark model are repeated 
 ## Visualization of results
 The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
 Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
+
+graph names with descriptions and axes info
