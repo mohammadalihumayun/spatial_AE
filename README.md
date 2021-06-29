@@ -1,6 +1,6 @@
 # Spatial_AE
 
-The repository contains python implementation for an unsupervised speech representation learning model evaluated over automatic keyword spotting.  
+The repository contains python implementation for an unsupervised speech representation learning model evaluated over automatic keyword spotting.
 The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
 For any queries, please contact:  
