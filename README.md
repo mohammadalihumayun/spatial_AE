@@ -1,6 +1,6 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, model evaluated over automatic keyword spotting.
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, model evaluated over automatic KeyWord Spotting KWS.
 The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
 The implementaion has following three code files, for the simulations and evaluation of the AE model.
@@ -14,8 +14,7 @@ mohammadalihumayun@gmail.com
 
 # Running the simulations
 
-You need to run `simulations.py` file to run the experiments and save their results.
-The  `simulations.py` uses the modules for deeplearning models from `dlmodels.py` file
+You need to run `simulations.py` file to run the experiments and to save their results.
 
 ## Select input and output data directories
 Before running the `simulations.py` file, select the input output data directories and the number of samples to use from dataset.    
@@ -40,13 +39,11 @@ https://www.tensorflow.org/datasets/catalog/speech_commands
 
 ## Experiments for evaluation
 
-The code loads audio files with corresponding filenames and sample rates using scipy. It extracts the spectral features from loaded audio files using librosa and  segregates the unlabaled set for unsupervised AE training and labeled set for  supervised KWS evaluation. 
-
-Mean anchor vector and postion scalars are computed using cosine distances in features space using scipy  
-The proposed and the benchmark models based on tf.keras are imported from the module dlmodels 
-
-Training and evaluation for proposed as well as benchmark model are performed for multiple iterations using the loaded models  
-The results are saved as csv file named results.csv in the earlier selected results directory  
+The code loads audio files with corresponding filenames and sample rates using scipy and extracts their spectral features using librosa.
+The dataset is then segregated into unlabaled set for unsupervised AE training and the labeled set for  supervised KWS evaluation.
+The mean anchor vector and corresponding postion scalars are computed using cosine distances in features space using scipy.
+The deeplearning models are implemented in tensorflow.kers and are imported as modules from `dlmodels.py` file. 
+multiple iterations are run for training and evaluation of the proposed as well as benchmark model and the results are saved as csv file named 'results.csv' in the earlier selected results directory. The 'results.csv' stores the results in following format
 
 
 |wercm|cmpresi|cmrecal|cmavpresi|cmavrecal|wer_v_p|appresi|aprecal|apavpresi|apavrecal|
