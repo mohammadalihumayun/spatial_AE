@@ -56,6 +56,8 @@ graph names with descriptions and axes info
 
 # Contact information
 
+The model has been developed in Faculty of Integrated Sciences, Universiti Brunei Darussalam, Jalan Tungku Link, BE 1410, Brunei.
+
 For any queries, please contact:
 
 Pg Emeroylariffion Abas
