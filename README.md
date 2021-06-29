@@ -3,20 +3,25 @@
 The repository contains python implementation for an unsupervised speech representation learning model evaluated over automatic keyword spotting.
 The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
-For any queries, please contact:  
-mohammadalihumayun@gmail.com
-
 The repository contains the following three code files for the implementation and evaluation of the model.
 
 `dlmodels.py` library that contains the modeules for tensorflow.keras implementation of the proposed and benchmark models  
 `simulations.py` file to run the experiments  
 `display_results.py` file to plot the results graphically  
 
+For any queries, please contact:  
+mohammadalihumayun@gmail.com
+
 ## Input and output data directories
 First of all the directory to save the results and the directory to load the input speech dataset are selected  
 Speech_commands, i.e. Google Dataset. has been used for out experiments which can be downloaded from the following URL  
 https://www.tensorflow.org/datasets/catalog/speech_commands
 
+import the modules for the proposed and the benchmark models
+```
+from dlmodels import bmcnn, discrim,ae_pos_abx
+```
+Select the input and output folders.
 ```
 resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
@@ -38,9 +43,7 @@ Unlabaled set for unsupervised AE training and labeled set for   supervised KWS 
 ## Experiments for evaluation
 Mean anchor vector and postion scalars are computed using cosine distances in features space using scipy  
 The proposed and the benchmark models based on tf.keras are imported from the module dlmodels 
-```
-from dlmodels import bmcnn, discrim,ae_pos_abx
-```
+
 Training and evaluation for proposed as well as benchmark model are performed for multiple iterations using the loaded models  
 The results are saved as csv file named results.csv in the earlier selected results directory  
 
