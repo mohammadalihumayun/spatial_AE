@@ -24,8 +24,8 @@ corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 unlabeled_set_size=12000 # number of samples for autoencoder training
 lbl_trai_size=3000 # size of training set for supervised KWS evaluation
 lbl_test_size=6000 # size of test set for supervised KWS evaluation
-lbl_trai_size=lbl_trai_size*2 # selecting twice as dataset will be split to half after shuffling for each iteration while supervised KWS training
 num_simulations=10 # iterations for training and testing runs of the models
+lbl_trai_size=lbl_trai_size*2 # selecting twice as dataset will be split to half after shuffling for each iteration while supervised KWS training
 
 
 
