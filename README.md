@@ -56,7 +56,7 @@ The simulation results are saved as follows, in the results directory:
 
 
 # Visualization of results
-You need to run `display_results.py` file to load the results, from the results directory, and display them graphically. Running the file plots following graphs:
+You need to run `display_results.py` file to load the results, from the results directory, and display them graphically. Running the file plots following graphs and saves them as figures in the 'results' folder:
 
 * Precision for keywords
 * Recall for keywords
