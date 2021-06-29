@@ -1,6 +1,6 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. AE is constrained with the spatial position of datapoints within the dataset. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. The proposed AE is constrained with spatial position of datapoints within the dataset. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
 The implementaion has following three code files, for the simulations and evaluation of the AE model.
 
