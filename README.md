@@ -1,7 +1,6 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, model evaluated over automatic KeyWord Spotting KWS.
-The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. AE is constrained with the spatial position of datapoints within the dataset. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
 
 The implementaion has following three code files, for the simulations and evaluation of the AE model.
 
@@ -15,7 +14,7 @@ The implementaion has following three code files, for the simulations and evalua
 You need to run `simulations.py` file to run the experiments and to save their results.
 
 ## Select input and output data directories
-Before running the `simulations.py` file, select the input output data directories and the number of samples to use from dataset.    
+Before running the `simulations.py` file, select the input output data directories, the number of samples to use from dataset, and the number of iterations to test the model.  
 Set following variables to select the directory to load input speech dataset and the directory, to save the results:
 ```
 resultspath='x:/results_directory' # folder to save the results as csv and plots
@@ -42,13 +41,21 @@ The code loads audio files with corresponding filenames and sample rates using s
 The dataset is then segregated into unlabaled set for unsupervised AE training and the labeled set for  supervised KWS evaluation.
 The mean anchor vector and corresponding postion scalars are computed using cosine distances in features space using scipy.
 The deeplearning models are implemented in tensorflow.kers and are imported as modules from `dlmodels.py` file. 
-Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations and the results are saved as csv file named 'results.csv' in the earlier selected results directory. The 'results.csv' stores the results in following format
+Training and evaluation of the proposed as well as benchmark model are repeated for the selected number of iterations over randomly sampled different training and test sets. 
+The simulations results are saved as follows in the results directory:  
+Transformed AE representation for KWS train/test sets as 'ae_representation.npy'  
+MFCC features for KWS train/test sets as 'MFCC_features.npy'  
+Classification scores as csv file named 'results.csv'   
+The 'results.csv' stores the results in following format:  
 
 
-|wercm|cmpresi|cmrecal|cmavpresi|cmavrecal|wer_v_p|appresi|aprecal|apavpresi|apavrecal|
+|MFCC WER|MFCC precision|MFCC recall|MFCC avg precision|MFCC avg recall|AE WER|AE precision|AE recall|AE avg precision|AE avg recall|
 |---|---|---|---|---|---|---|---|---|---|
 
-## Visualization of results
+
+# Visualization of results
+You need to run `display_results.py` file to load the saved results and display them graphically. Running the file plots following graphs:
+
 The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
 Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
 
