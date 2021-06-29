@@ -25,6 +25,7 @@ unlabeled_set_size=12000 # number of samples for autoencoder training
 lbl_trai_size=3000 # size of training set for supervised KWS evaluation
 lbl_test_size=6000 # size of test set for supervised KWS evaluation
 lbl_trai_size=lbl_trai_size*2 # selecting twice as dataset will be split to half after shuffling for each iteration while supervised KWS training
+num_simulations=10 # iterations for training and testing runs of the models
 
 
 
@@ -152,7 +153,7 @@ d=cdist(pfeat,acr, metric='cosine')#correlation, cosine
 
 # training and evaluation for proposed as well as benchmark model
 
-for i in range(10):
+for i in range(num_simulations):
  wercm, cmpresi, cmrecal, cmavpresi, cmavrecal=bmcnn()
  wer_v_p, embeding_v_p, embeding_t_p,hist_p, appresi, aprecal, apavpresi, apavrecal =ae_pos_abx(ae_inp_mfcflat,[ae_inp_mfcflat,d],500,'Adamax',['mse','mse'],0.0,kws_trai_mfcflat,kws_trai_labelids,kws_test_mfcflat,kws_test_labelids,5,0.00,0.0)
  with open(resultspath+'/results.csv', 'a', newline='') as csvfile:
