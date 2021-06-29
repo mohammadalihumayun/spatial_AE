@@ -16,13 +16,13 @@ You need to run `simulations.py` file to run the experiments and to save their r
 ## Select input and output data directories
 Before running the `simulations.py` file, select the input output data directories, the number of samples to use from dataset, and the number of iterations to test the model.
 
-*Set following variables to select the directory to load input speech dataset and the directory, to save the results:
+* Set following variables to select the directory to load input speech dataset and the directory, to save the results:
 ```
 resultspath='x:/results_directory' # folder to save the results as csv and plots
 corpuspath='x:/googlecorpus_directory' # folder for speech dataset
 ```
 
-Markup: *Set following variables to select the number of samples for unsupervised autoencoder training, the size of training/test sets for supervised KWS evaluation, and the number of repeatations of train/test cycles for the models:
+* Set following variables to select the number of samples for unsupervised autoencoder training, the size of training/test sets for supervised KWS evaluation, and the number of repeatations of train/test cycles for the models:
 
 ```
 unlabeled_set_size=12000 # number of samples for autoencoder training
