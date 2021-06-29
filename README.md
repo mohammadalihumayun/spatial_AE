@@ -56,10 +56,7 @@ The simulations results are saved as follows in the results directory:
 
 
 # Visualization of results
-You need to run `display_results.py` file to load the saved results and display them graphically. Running the file plots following graphs:
-
-The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
-Precision and recall values for all classes are loaded from results.csv from the results path and the values are plotted and saved as figures in the results directory
+You need to run `display_results.py` file to load the results, from the results directory, and display them graphically. Running the file plots following graphs:
 
 * Precision for keywords
 * Recall for keywords
