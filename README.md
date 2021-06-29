@@ -29,6 +29,7 @@ The results are saved as csv file named results.csv in the earlier selected resu
 
 
 |wercm|cmpresi|cmrecal|cmavpresi|cmavrecal|wer_v_p|appresi|aprecal|apavpresi|apavrecal|
+|---|---|---|---|---|---|---|---|---|---|
 
 ## Visualization of results
 The spectral feature space and the features extracted by the proposed model are compressed by PCA, scaled and means are plotted as scatter plot for visualization  
