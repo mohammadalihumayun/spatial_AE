@@ -1,12 +1,12 @@
 # Spatial_AE
 
-This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder AE, evaluated over automatic KeyWord Spotting KWS. The proposed AE is constrained with spatial position of datapoints. The relevant paper for the proposed model is currently under review, and we will update its information, if accepted.  
+This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder (AE), evaluated over automatic KeyWord Spotting (KWS). The proposed AE is constrained with spatial position of datapoints. The relevant paper for the proposed model is currently under review, and we will update the information in this website once the paper is published.  
 
-The implementaion has following three code files, for the simulations and evaluation of the AE model.
+The implementaion has following three main code files, for the simulations and evaluation of the AE model.
 
-* `dlmodels.py` containing modules for implementation of the proposed and benchmark deep learning models   
-* `simulations.py` file to run the experiments and save the results
-* `display_results.py` file to plot the results graphically and save as figures
+* `dlmodels.py`: contains modules for implementation of the proposed and benchmark deep learning models   
+* `simulations.py`: file to run the experiments and save the results
+* `display_results.py`: file to plot the results graphically and save as figures
 
 
 # Running the simulations
@@ -56,7 +56,7 @@ The simulation results are saved as follows, in the results directory:
 
 
 # Visualization of results
-You need to run `display_results.py` file to load the results, from the results directory, and display them graphically. Running the file plots following graphs and saves them as figures in the 'results' folder:
+You need to run `display_results.py` file to load the results from the results directory, and display them graphically. Running the file plots the following graphs and saves them as figures in the 'results' folder:
 
 * Precision for keywords
 * Recall for keywords
@@ -72,7 +72,7 @@ The model has been developed in Faculty of Integrated Sciences, Universiti Brune
 
 For any queries, please contact:
 
-Pg Emeroylariffion Abas
-emeroylariffion.abas@ubd.edu.bn  
 Mohammad Ali Humayun
 mohammadalihumayun@gmail.com
+Pg Emeroylariffion Abas
+emeroylariffion.abas@ubd.edu.bn  
