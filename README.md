@@ -73,6 +73,6 @@ The model has been developed in Faculty of Integrated Sciences, Universiti Brune
 For any queries, please contact:
 
 Mohammad Ali Humayun
-mohammadalihumayun@gmail.com
+mohammadalihumayun@gmail.com  
 Pg Emeroylariffion Abas
 emeroylariffion.abas@ubd.edu.bn  
