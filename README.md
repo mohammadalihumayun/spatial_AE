@@ -2,7 +2,7 @@
 
 This repository contains python implementation for an unsupervised, speech representation learning Auto-Encoder (AE), evaluated over automatic KeyWord Spotting (KWS). The proposed AE is constrained with spatial position of datapoints. Please cite the relevant paper for the proposed model as follows:
 ```
-Humayun MA, Yassin H, Abas PE. 2021. Spatial position constraint for unsupervised learning of speech representations. PeerJ Computer Science 7:e650 https://doi.org/10.7717/peerj-cs.650
+Humayun MA, Yassin H, Abas PE. 2021. Spatial position constraint for unsupervised learning of speech representations. PeerJ Computer Science 7:e650   https://doi.org/10.7717/peerj-cs.650
 ```
 The implementaion has following three main code files, for the simulations and evaluation of the AE model.
 
